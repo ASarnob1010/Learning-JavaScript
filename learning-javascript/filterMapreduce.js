@@ -3,7 +3,7 @@
 // const values = coding.forEach( (item) => {
 //     //console.log(item);
 //     return item//it doesn't return anything
-// } )
+// })
 
 // console.log(values);
 //filter
@@ -40,8 +40,6 @@ const books = [
     return bk.publish >= 1995 && bk.genre === "History"
 })
   console.log(userBooks); */
-
-
   //map
   const myNumers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   // const newNums = myNumers.map( (num) => { return num + 10})
@@ -51,15 +49,13 @@ const books = [
                   .filter( (num) => num >= 40)
   
   console.log(newNums);
-
-
 // Reduce
-const myNums = [1, 2, 3]
- const myNums = myNums.reduce(function (acc, currval) {
-     console.log(`acc: ${acc} and currval: ${currval}`);
-     return acc + currval
-}, 0)
-const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0)
+const myNums = [1,2,3,4,5];
+var total = myNums.reduce(function(acc,currval){
+    console.log(`acc: ${acc} and currval: ${currval}`);
+    return acc+currval;
+ },0);
+ console.log(total);
 
 
 const shoppingCart = [

@@ -65,6 +65,7 @@ console.log(Object.keys(tinderUser));
 console.log(Object.values(tinderUser));
 
 
+//destructure ;
 const course = {
     coursename: "js",
     price: "999",
@@ -72,7 +73,6 @@ const course = {
 }
 
 // course.courseInstructor
-
 const {courseInstructor: instructor} = course
 
 // console.log(courseInstructor);

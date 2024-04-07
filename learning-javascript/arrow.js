@@ -16,12 +16,6 @@ welcomeMsg.welcomemsg();
 //     console.log(this.username);
 // }
 
-/* const chai =  () => {
-    let username = "hitesh"
-    console.log(this);
-} */
-
-
 //arrow function
 /* const chai = () => {
    let username = "arnob";
@@ -32,15 +26,16 @@ chai() */
 
 //two ways of return value
 // const addTwo = (num1, num2) => {
-//     return num1 + num2
-// }
-
+//     return num1 + num2 }
 
 const addthree = (num1,num2,num3)=>{
   let sumofthree = num1+num2+num3;
   console.log(sumofthree)
 }
 addthree(1,5,6);
+//another way
+const addthree = (num1,num2,num3) => num1+num2+num3;
+console.log(addthree(1,2,3))
 
 
 // const addTwo = (num1, num2) =>  num1 + num2

@@ -9,13 +9,10 @@ if (true) {
 // console.log(a);
 // console.log(b);
 // console.log(c);
-
-
 function one(){
-    const username = "hitesh"
-
+    const username = "hitesh";
     function two(){
-        const website = "youtube"
+        const website = "youtube";
         console.log(username);
     }
     // console.log(website);
@@ -27,8 +24,8 @@ function one(){
 // one()
 
 if (true) {
-    const username = "hitesh"
-    if (username === "hitesh") {
+    const username = "Arnob"
+    if (username === "Bokshi") {
         const website = " youtube"
         // console.log(username + website);
     }

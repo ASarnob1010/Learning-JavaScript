@@ -1,13 +1,3 @@
-// if
-const isUserloggedIn = true
-const temperature = 41
-// if ( temperature === 40 ){
-//     console.log("less than 50");
-// } else {
-//     console.log("temperature is greater than 50");
-// }
-
-// console.log("Execute");
 // <, >, <=, >=, ==, !=, ===, !==
 
 // const score = 200
@@ -37,12 +27,12 @@ const userLoggedIn = true
 const debitCard = true
 const loggedInFromGoogle = false
 const loggedInFromEmail = true
-
-if (userLoggedIn && debitCard && 2==3) {
-    console.log("Allow to buy course");
+let person1 = "arnob";
+let person2 = "my queen";
+if (userLoggedIn && debitCard && "2==2" ) {
+    console.log(`allow ${person1} to buy the course`);
 }
 
 if (loggedInFromGoogle || loggedInFromEmail) {
-    console.log("User logged in");
+    console.log(`allow ${person2} to buy the course`);
 }
-

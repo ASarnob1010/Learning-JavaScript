@@ -34,7 +34,7 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 
 
-function addcart(...num){//taking all element beloing addcart
+function addcart(...num){//taking all element belonging to addcart
   console.log(num);
 }
 addcart(100,200,4000);

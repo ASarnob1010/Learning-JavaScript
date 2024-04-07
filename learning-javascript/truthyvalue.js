@@ -16,18 +16,15 @@ if (userEmail) {
 //     console.log("Array is empty");
 // }
 
-const emptyObj = {}
-
-if (Object.keys(emptyObj).length === 0) {
-    console.log("Object is empty");
-}
+const emptyObj = {name : "arnob", id : 10, class : "third"};
+console.log(Object.keys(emptyObj).length);
 
 // Nullish Coalescing Operator (??): null undefined
-
+//checks value is it null or undefined
 let val1;
-// val1 = 5 ?? 10
-// val1 = null ?? 10
-// val1 = undefined ?? 15
+val1 = 5 ?? 10
+val1 = null ?? 10
+val1 = undefined ?? 15
 val1 = null ?? 10 ?? 20
 
 console.log(val1);

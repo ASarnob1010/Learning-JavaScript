@@ -1,11 +1,8 @@
 /* let age = "13"
 console.log(typeof age);
-
 //string to Number conversion
-
 let numberCon = Number(age);
 console.log(typeof numberCon); */
-
 let age = "33abc"
 console.log(typeof age);
 

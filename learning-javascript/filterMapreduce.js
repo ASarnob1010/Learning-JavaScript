@@ -1,9 +1,9 @@
 //for each loop doesn't return that why we use filter,map,reduce
-// const coding = ["js", "ruby", "java", "python", "cpp"]
-// const values = coding.forEach( (item) => {
-//     //console.log(item);
-//     return item//it doesn't return anything
-// })
+const coding = ["js", "ruby", "java", "python", "cpp"]
+const values = coding.forEach( (item) => {
+    console.log(item);
+    return item//it doesn't return anything
+})
 
 // console.log(values);
 //filter
@@ -11,16 +11,6 @@
 // const newNums = myNums.filter( (num) => {
 //     return num > 4
 // } )
-
-//using forEach
-// const newNums = []
-// myNums.forEach( (num) => {
-//     if (num > 4) {
-//         newNums.push(num)
-//     }
-// } )
-
-// console.log(newNums);
 
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
@@ -49,6 +39,7 @@ const books = [
                   .filter( (num) => num >= 40)
   
   console.log(newNums);
+
 // Reduce
 const myNums = [1,2,3,4,5];
 var total = myNums.reduce(function(acc,currval){
@@ -56,7 +47,6 @@ var total = myNums.reduce(function(acc,currval){
     return acc+currval;
  },0);
  console.log(total);
-
 
 const shoppingCart = [
     {

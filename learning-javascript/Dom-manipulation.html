@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Example</title>
+    <style>
+        
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>DOM Manipulation Example</h2>
+    <button class="abcd">Submit</button>
+    <p id="123"></p>
+    <script>
+        // var btn = document.querySelector(".abcd");
+        // btn.addEventListener("click", function() {
+        //    btn.textContent = " starting in 3 seconds";
+        // })
+            // var inner = document.querySelector("#123");
+            // inner.innerHTML = '<i>inner html</i>';
+
+            // var htwo = document.querySelector("h2");
+            // htwo.style.color = 'red';
+            // htwo.style.fontFamily = "gilroy"; 
+
+            // var img = document.createElement("img");
+            // img.src = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fcollections%2F2530441%2Fbackgrounds-and-textures&psig=AOvVaw0xdo35LBvPiyksrZhCyzbC&ust=1708450624962000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIiN1dj4t4QDFQAAAAAdAAAAABAR';
+            // document.body.appendChild(img); 
+
+            // var btnClick = document.querySelector('button');
+            // btnClick.addEventListener("click", function () {
+            //     alert('get the funk out of here');
+            // });
+
+        var btnMouseOver = document.querySelector('button');
+        var originalText = btnMouseOver.textContent; // Store the original text content
+
+        btnMouseOver.addEventListener("mouseover", function () {
+            btnMouseOver.textContent = "starting....";
+        });
+
+        btnMouseOver.addEventListener("mouseout", function () {
+            btnMouseOver.textContent = originalText; 
+
+            // var btnMouseLeave = document.querySelector('button');
+            // btnMouseLeave.addEventListener("mouseleave", function () {
+            //     btnMouseLeave.textContent = "Make New Card";
+            //     btnMouseLeave.style.backgroundColor = "#fff";
+            // });
+            })
+    </script>
+</body>
+</html>

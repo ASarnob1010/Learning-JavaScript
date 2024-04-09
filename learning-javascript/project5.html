@@ -7,7 +7,7 @@
 </head>
 <body style="background-color: #414141; color: aliceblue;">
     <h2>Amazing image</h2>
-    <div >
+    <div id = "img">
         <ul id="images">
             <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
             <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
@@ -19,6 +19,12 @@
    </div>
 </body>
 <script>
+  document.querySelector('ul').addEventListener("click",function(e){
+          console.log(e.target.id);
+          e.target.parentNode.remove();
+  })
+
+
 
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
@@ -34,16 +40,16 @@
     //     console.log("google clicked");
     // }, false);
    
-    document.querySelector('#images').addEventListener('click', function(e){
-       console.log(e.target.tagName);
-        // if (e.target.tagName === 'IMG') {
-        //     console.log(e.target.id);
-        //     console.log(e.target.parentNode);
-             e.target.parentNode.remove();
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //    console.log(e.target.tagName);
+    //     // if (e.target.tagName === 'IMG') {
+    //     //     console.log(e.target.id);
+    //     //     console.log(e.target.parentNode);
+    //          e.target.parentNode.remove();
     
            
-        }
-     );
+    //     }
+    //  );
 
 </script>
 </html>
